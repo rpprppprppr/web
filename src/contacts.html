@@ -5,7 +5,7 @@
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Главная страница</title>
+        <title>Контакты</title>
         <link rel="stylesheet" href="/src/assets/styles/style.css">
     </head>
     <body>
@@ -20,14 +20,31 @@
         </header>
 
         <main>
-            <h1>Добро пожаловать!</h1>
-            <p>Это пример главной страницы нашего сайта.</p>
-            <h3>Наша команда</h3>
-            <h4>Лучшие специалисты</h4>
-            <p>Мы рады предложить вам наши услуги.</p>
-            <h3>Свяжитесь с нами</h3>
-            <p>Мы всегда готовы помочь.</p>
-            <hr>
+            <h2>Contact Us</h2>
+            <p>Наши контактные данные</p>
+            <img src="assets/img/test.txt" alt="Изображение" style="max-width: 350px;">
+            <h4>Address</h4>
+            <p>Тюмень</p>
+            <h4>Phone</h4>
+            <ul>
+                <li>+7 (123) 456-78-90</li>
+                <li>+7 (098) 765-43-21</li>
+            </ul>
+            <h4>Online service</h4>
+            <ul>
+                <li><a href="http://example.com">Сайт</a></li>
+                <li><a href="mailto:example@example.com">Email</a></li>
+            </ul>
+            <h4>Send us message</h4>
+            <form>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </main>
 
         <footer>
@@ -41,7 +58,5 @@
             </ul>
             <p>Все права защищены</p>
         </footer>
-
-        <script src="index.js"></script>
     </body>
 </html>
