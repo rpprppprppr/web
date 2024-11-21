@@ -118,6 +118,15 @@
 .block__welcome-image {
     position: absolute;
     top: 0;
-    margin-left: 520px;
+    left: calc(50% - 720px);
     z-index: -1;
+
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.block__welcome-image img {
+    object-fit: cover;
+    transform: translate(62%, -31%);
 }
