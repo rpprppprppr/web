@@ -47,11 +47,71 @@
         <symbol id="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.26363 6.26361C8.91216 6.61508 8.91216 7.18493 9.26363 7.5364L13.7272 12L9.26363 16.4636C8.91216 16.8151 8.91216 17.3849 9.26363 17.7364C9.6151 18.0879 10.185 18.0879 10.5364 17.7364L15.6364 12.6364C15.9879 12.2849 15.9879 11.715 15.6364 11.3636L10.5364 6.2636C10.1849 5.91213 9.6151 5.91213 9.26363 6.26361Z" fill="#2D66EE"/>
         </symbol>
+        <symbol id="burger" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="59" height="8" fill="#2D66EE"/>
+            <rect y="16" width="59" height="8" fill="#2D66EE"/>
+            <rect y="32" width="59" height="8" fill="#2D66EE"/>
+        </symbol>
+        <symbol id="close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.1214 9L17.4854 15.364C18.0712 15.9497 18.0712 16.8995 17.4854 17.4853C16.8996 18.0711 15.9499 18.0711 15.3641 17.4853L9.0001 11.1213L2.63614 17.4853C2.05036 18.0711 1.10061 18.0711 0.514822 17.4853C-0.0709643 16.8995 -0.0709642 15.9497 0.514822 15.364L6.87878 9L0.514822 2.63604C-0.0709642 2.05025 -0.0709643 1.10051 0.514822 0.514719C1.10061 -0.0710678 2.05036 -0.0710677 2.63614 0.514719L9.0001 6.87868L15.3641 0.514719C15.9499 -0.0710671 16.8996 -0.0710678 17.4854 0.514719C18.0712 1.10051 18.0712 2.05025 17.4854 2.63604L11.1214 9Z" fill="#98A2B3"/>
+        </symbol>
     </svg>
 
     <div class="container">
         <div class="header">
             <div class="header__content">
+                <div class="header__menu">
+                    <svg>
+                        <use href="#burger" alt="burger-icon"></use>
+                    </svg>
+                    <div class="header__menu-content">
+                        <div class="header__menu-wrapper">
+                            <div class="header__menu-close-wrapper">
+                                <div class="header__menu-close">
+                                    <svg>
+                                        <use href="#close" alt="close-icon"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="header__menu-blocks">
+                                <a class="header__menu-title" href="#">It-website</a>
+                                <div class="header__menu-links">
+                                    <a class="header__menu-link" href="#">Services</a>
+                                    <a class="header__menu-link" href="#">Media</a>
+                                    <a class="header__menu-link" href="#">Cases</a>
+                                    <a class="header__menu-link" href="#">FAQ</a>
+                                    <a class="header__menu-link" href="#">Contacts</a>
+                                </div>
+                                <div class="header__menu-contacts">
+                                    <div class="header__menu-contact">
+                                        <svg>
+                                            <use href="#phone" alt="phone-icon"></use>
+                                        </svg>
+                                        <div class="header__menu-contact-content">
+                                            <a href="tel:+71111111111">+7 (111) 111 11 11</a>
+                                        </div>
+                                    </div>
+                                    <div class="header__menu-contact">
+                                        <svg>
+                                            <use href="#phone" alt="phone-icon"></use>
+                                        </svg>
+                                        <div class="header__menu-contact-content">
+                                            <a href="tel:+71111111111">+7 (111) 111 11 11</a>
+                                        </div>
+                                    </div>
+                                    <div class="header__menu-contact">
+                                        <svg>
+                                            <use href="#mail" alt="mail-icon"></use>
+                                        </svg>
+                                        <div class="header__menu-contact-content">
+                                            <a href="mailto:itcompany@mail.com" class="header__contact-content">itcompany@mail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <a class="header__title" href="#">It-website</a>
                 <div class="header__links">
                     <a class="header__link" href="#">Services</a>
@@ -61,18 +121,18 @@
                     <a class="header__link" href="#">Contacts</a>
                 </div>
                 <div class="header__contacts">
-                    <div class="header__contact">
-                        <svg width="24" height="24">
-                            <use href="#phone" style="color: #2d66ee;"></use>
+                    <div class="header__contact-phone">
+                        <svg>
+                            <use href="#phone" alt="phone-icon"></use>
                         </svg>
                         <div class="header__contact-content">
                             <a href="tel:+71111111111">+7 (111) 111 11 11</a>
                             <a href="tel:+71111111111">+7 (111) 111 11 11</a>
                         </div>
                     </div>
-                    <div class="header__contact">
-                        <svg width="24" height="24">
-                            <use href="#mail" style="color: #2d66ee;"></use>
+                    <div class="header__contact-mail">
+                        <svg>
+                            <use href="#mail" alt="mail-icon"></use>
                         </svg>
                         <div class="header__contact-content">
                             <a href="mailto:itcompany@mail.com" class="header__contact-content">itcompany@mail.com</a>
@@ -102,13 +162,13 @@
                     </div>
                     <div class="form__welcome-content">
                         <label for="name">Full name</label>
-                        <input id="name" type="text" value="Иван Иванов" placeholder="Имя Фамилия"></input>
+                        <input id="name" type="text" value="Иван Иванов" placeholder="Name Surname"></input>
                     </div>
                     <button type="submit">Get consultation</button>
                 </form>
             </div>
             <div class="block__welcome-image">
-                <img src="assets/img/screens.png" alt="">
+                <img src="assets/img/screens.png" alt="screens">
             </div>
         </div>
 
@@ -144,43 +204,43 @@
                     <div class="block__devcycle-item">
                         <a href="#">iOS  development</a>
                         <svg width="24" height="24">
-                            <use href="#arrow" style="color: #2d66ee;"></use>
+                            <use href="#arrow" style="color: #2d66ee;" alt="arrow-icon"></use>
                         </svg>
                     </div>
                     <div class="block__devcycle-item">
                         <a href="#">Android development</a>
                         <svg width="24" height="24">
-                            <use href="#arrow" style="color: #2d66ee;"></use>
+                            <use href="#arrow" style="color: #2d66ee;" alt="arrow-icon"></use>
                         </svg>
                     </div>
                     <div class="block__devcycle-item">
                         <a href="#">Web development</a>
                         <svg width="24" height="24">
-                            <use href="#arrow" style="color: #2d66ee;"></use>
+                            <use href="#arrow" style="color: #2d66ee;" alt="arrow-icon"></use>
                         </svg>
                     </div>
                     <div class="block__devcycle-item">
                         <a href="#">UI/UX design</a>
                         <svg width="24" height="24">
-                            <use href="#arrow" style="color: #2d66ee;"></use>
+                            <use href="#arrow" style="color: #2d66ee;" alt="arrow-icon"></use>
                         </svg>
                     </div>
                     <div class="block__devcycle-item">
                         <a href="#">Testing</a>
                         <svg width="24" height="24">
-                            <use href="#arrow" style="color: #2d66ee;"></use>
+                            <use href="#arrow" style="color: #2d66ee;" alt="arrow-icon"></use>
                         </svg>
                     </div>
                     <div class="block__devcycle-item">
                         <a href="#">Launch</a>
                         <svg width="24" height="24">
-                            <use href="#arrow" style="color: #2d66ee;"></use>
+                            <use href="#arrow" style="color: #2d66ee;" alt="arrow-icon"></use>
                         </svg>
                     </div>
                     <div class="block__devcycle-item">
                         <a href="#">IT consulting</a>
                         <svg width="24" height="24">
-                            <use href="#arrow" style="color: #2d66ee;"></use>
+                            <use href="#arrow" style="color: #2d66ee;" alt="arrow-icon"></use>
                         </svg>
                     </div>
                 </div>
@@ -194,7 +254,7 @@
                     <div class="footer__contact">
                         <div class="footer__contact-title">
                             <svg width="24" height="24">
-                                <use href="#phone" style="color:#98a2b3"></use>
+                                <use href="#phone" style="color:#98a2b3" alt="phone-icon"></use>
                             </svg>
                             <p class="footer__contact-title">Contact nums</p>
                         </div>
@@ -203,7 +263,7 @@
                     <div class="footer__contact">
                         <div class="footer__contact-title">
                             <svg width="24" height="24">
-                                <use href="#mail" style="color:#98a2b3"></use>
+                                <use href="#mail" style="color:#98a2b3" alt="mail-icon"></use>
                             </svg>
                             <p class="footer__contact-title">Post</p>
                         </div>
@@ -212,7 +272,7 @@
                     <div class="footer__contact">
                         <div class="footer__contact-title">
                             <svg width="24" height="24">
-                                <use href="#place" style="color:#98a2b3"></use>
+                                <use href="#place" style="color:#98a2b3" alt="place-icon"></use>
                             </svg>
                             <p class="footer__contact-title">Address</p>
                         </div>
@@ -221,7 +281,7 @@
                     <div class="footer__contact">
                         <div class="footer__contact-title">
                             <svg width="24" height="24">
-                                <use href="#document" style="color:#98a2b3"></use>
+                                <use href="#document" style="color:#98a2b3" alt="doc-icon"></use>
                             </svg>
                             <p class="footer__contact-title">Leave a request</p>
                         </div>
@@ -230,7 +290,7 @@
                 </div>
                 <div class="footer__end">
                     <svg width="32" height="16">
-                        <use href="#vector" style="color: #FFFFFF;"></use>
+                        <use href="#vector" style="color: #FFFFFF;" alt="vector-icon"></use>
                     </svg>
                     <p class="footer__end-text">We work throughout world</p>
                 </div>
