@@ -275,10 +275,10 @@
 
 @media screen and (max-width: 767px) {
     .header {
-        padding: 35px 0 35px 17px;
+        padding: 35px 16px;
 
         top: 20px;
-        margin-left: -10px;
+        margin-left: -16px;
     }
 
     .header__menu {

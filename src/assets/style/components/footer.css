@@ -31,6 +31,9 @@
 
 .footer__contacts {
     display: flex;
+    flex-wrap: wrap;
+
+    row-gap: 32px;
 }
 
 .footer__contact {
@@ -38,6 +41,7 @@
     gap: 8px;
 
     flex: 1;
+    min-width: 160px;
 }
 
 .footer__contact-title {
@@ -84,4 +88,37 @@
     line-height: 16px;
     letter-spacing: -0.08px;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer {
+        padding: 46px 32px;
+        width: 100%;
+
+        margin-bottom: 0;
+        margin-left: -32px;
+    }
+
+    .footer__content {
+        grid-gap: 32px;
+    }
+
+    .footer__contact-content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 38px 16px;
+        margin-left: -16px;
+    }
+
+    .footer__content {
+        grid-gap: 52px;
+    }
+
+    .footer__title {
+        font-size: 32px;
+    }
 }
