@@ -1029,7 +1029,7 @@ video {
   letter-spacing: 0.38px;
   color: var(--color_1);
 }
-.block__welcome-image {
+.block__welcome-background {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1040,12 +1040,14 @@ video {
   height: 900px;
   overflow: hidden;
 }
-.block__welcome-image img {
-  object-fit: cover;
-  transform: translate(62%, -31%);
+.block__welcome-background-wrapper {
+  display: flex;
+  gap: 2%;
+  justify-content: end;
+  transform: translateX(8%);
 }
 @media screen and (max-width: 1224px) {
-  .block__welcome-image {
+  .block__welcome-background {
     width: 100vw;
   }
 }
@@ -1073,12 +1075,11 @@ video {
     width: 295px;
     font-size: 16px;
   }
-  .block__welcome-image {
+  .block__welcome-background {
     height: 762px;
   }
-  .block__welcome-image img {
-    scale: 0.6;
-    transform: translate(50%, -46%);
+  .block__welcome-background-wrapper {
+    transform: translateX(2%);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1089,12 +1090,11 @@ video {
     margin-top: 536px;
     width: 392px;
   }
-  .block__welcome-image {
+  .block__welcome-background {
     height: 1268px;
   }
-  .block__welcome-image img {
-    scale: 0.5;
-    transform: translate(-10%, -16%);
+  .block__welcome-background-wrapper {
+    transform: translate(-5%, 40%);
   }
 }
 
@@ -1162,6 +1162,53 @@ video {
   }
 }
 
+.background__image {
+  rotate: -12deg;
+  object-fit: cover;
+  animation: moveBackground 30s linear infinite;
+}
+@media screen and (max-width: 1023px) {
+  .background__image {
+    width: 146px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .background__image {
+    animation: none;
+  }
+}
+
+.image-left {
+  animation-direction: alternate;
+}
+
+.image-right {
+  animation-direction: alternate-reverse;
+}
+@media screen and (max-width: 767px) {
+  .image-right {
+    margin-top: -29px;
+  }
+}
+
+@keyframes moveBackground {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 1023px) {
+  @keyframes moveBackground {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(-22%);
+    }
+  }
+}
 .footer {
   border-radius: 12px;
   padding: 24px;
