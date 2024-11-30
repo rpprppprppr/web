@@ -1028,7 +1028,7 @@ video {
 }
 
 .block__discuss {
-  background: url("../../assets/img/discuss-background1440px.png");
+  background: url("../../assets/img/discuss/discuss-background1440px.png");
   margin-left: -108px;
   margin-right: -108px;
   padding: 80px 108px;
@@ -1074,7 +1074,7 @@ video {
 }
 @media screen and (max-width: 1023px) {
   .block__discuss {
-    background: url("../../assets/img/discuss-background1024px.png");
+    background: url("../../assets/img/discuss/discuss-background1024px.png");
     margin-left: -32px;
     margin-right: -32px;
     padding: 32px;
@@ -1091,7 +1091,7 @@ video {
 }
 @media screen and (max-width: 767px) {
   .block__discuss {
-    background: url("../../assets/img/discuss-background768px.png");
+    background: url("../../assets/img/discuss/discuss-background768px.png");
     margin-left: -16px;
     margin-right: -16px;
     padding: 34px 16px 54px;
