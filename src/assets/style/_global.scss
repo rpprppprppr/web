@@ -81,6 +81,17 @@ body {
     }
 }
 
+.form-wrapper {
+	width: 100%;
+	height: fit-content;
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.08);
+	background: var(--background-color_1);
+	display: flex;
+	flex-direction: column;
+}
+
 .icon-wrapper {
 	background-color: var(--color_7);
 	width: fit-content;
