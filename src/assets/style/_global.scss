@@ -90,6 +90,15 @@ body {
     }
 }
 
+.block-label {
+	font-family: var(--font-family_4);
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: -0.08px;
+	color: var(--color_6);
+}
+
 .form-wrapper {
 	width: 100%;
 	height: fit-content;
