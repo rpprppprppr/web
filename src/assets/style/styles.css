@@ -966,14 +966,6 @@ video {
   display: grid;
   gap: 16px;
 }
-.block__devcycle-subtitle {
-  font-family: var(--font-family_5);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.34px;
-  color: var(--color_1);
-}
 .block__devcycle-list {
   display: grid;
 }
