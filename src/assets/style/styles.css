@@ -1103,12 +1103,13 @@ video {
     padding: 32px;
     gap: 32px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .block__discuss .block-title {
-    max-width: 200px;
+    max-width: 600px;
   }
   .block__discuss .block-text {
-    max-width: 350px;
+    max-width: 344px;
     font-size: 14px;
   }
 }
@@ -1118,7 +1119,6 @@ video {
     margin-left: -16px;
     margin-right: -16px;
     padding: 34px 16px 54px;
-    flex-direction: column;
     gap: 32px;
   }
   .block__discuss-rightblock {
