@@ -223,6 +223,17 @@ body {
   text-align: center;
 }
 
+.block-input {
+  border: none;
+  border-bottom: solid 0.7px #d0d5dd;
+  font-family: var(--font-family_6);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: var(--color_1);
+}
+
 .button-blue {
   border-radius: 8px;
   border: 0px;
@@ -1125,22 +1136,141 @@ video {
   gap: 8px;
   flex: 1;
 }
-.form__discuss-content input {
-  border: none;
-  border-bottom: solid 0.7px #d0d5dd;
-  font-family: var(--font-family_6);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: -0.41px;
-  color: var(--color_1);
-}
 @media screen and (max-width: 767px) {
   .form__discuss {
     gap: 16px;
     flex-wrap: wrap;
   }
   .form__discuss-content {
+    padding: 12px 0;
+  }
+}
+
+.block__ebook {
+  background: url("../../assets/img/ebook/ebook-background.png");
+  margin-left: -108px;
+  margin-right: -108px;
+  padding: 80px 108px 34px;
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  column-gap: 24px;
+}
+.block__ebook-leftblock {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.block__ebook-leftblock img {
+  display: none;
+}
+.block__ebook-leftblock .form-wrapper {
+  gap: 24px;
+}
+.block__ebook-leftblock .form-wrapper .button-blue {
+  align-self: flex-end;
+  width: fit-content;
+  height: fit-content;
+}
+.block__ebook-rightblock {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.block__ebook-topblock {
+  display: none;
+}
+.block__ebook .block-title {
+  color: var(--color_7);
+}
+@media screen and (max-width: 1224px) {
+  .block__ebook {
+    margin-left: -80px;
+    margin-right: -80px;
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .block__ebook {
+    margin-left: -32px;
+    margin-right: -32px;
+    padding: 76px 32px 84px;
+    display: grid;
+    row-gap: 54px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .block__ebook-topblock {
+    display: initial;
+    max-width: 455px;
+    grid-column: span 2;
+  }
+  .block__ebook-leftblock .block-title {
+    display: none;
+  }
+  .block__ebook-leftblock .form-wrapper {
+    padding: 32px;
+    gap: 32px;
+  }
+  .block__ebook-leftblock .form-wrapper .button-blue {
+    align-self: flex-start;
+  }
+  .block__ebook-rightblock img {
+    max-height: 380px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .block__ebook {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 50px 48px 56px;
+    row-gap: 32px;
+    grid-template-columns: 1fr;
+  }
+  .block__ebook-topblock {
+    max-width: 100%;
+    grid-column: 1;
+  }
+  .block__ebook-leftblock {
+    max-width: 670px;
+    width: 100%;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+  }
+  .block__ebook-leftblock img {
+    display: initial;
+    height: 240px;
+    width: 160px;
+  }
+  .block__ebook-leftblock .form-wrapper {
+    max-width: 480px;
+  }
+  .block__ebook-rightblock {
+    display: none;
+  }
+}
+
+.form__ebook {
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: wrap;
+}
+.form__ebook-content {
+  display: grid;
+  gap: 8px;
+  padding: 16px 0;
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .form__ebook {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .form__ebook-content {
     padding: 12px 0;
   }
 }
@@ -1762,16 +1892,6 @@ video {
   display: grid;
   gap: 8px;
   flex: 1;
-}
-.form__welcome-content input {
-  border: none;
-  border-bottom: solid 0.7px #d0d5dd;
-  font-family: var(--font-family_6);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: -0.41px;
-  color: var(--color_1);
 }
 .form__welcome .button-blue {
   width: 132px;
