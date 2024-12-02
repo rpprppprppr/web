@@ -6,29 +6,41 @@
     max-width: 1440px;
     width: 100vw;
     display: flex;
-    gap: 128px;
+    justify-content: space-between;
 
     &-leftblock {
         width: 600px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 34px;
     }
 
+    
     &-content {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 32px;
     }
-
+    
+    .adaptive {
+        display: none;
+    }
+    
     &-tech {
         width: 496px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 16px;
     }
 
-    
+    &-rightblock {
+        max-width: 250px;
+        width: 100%;
+    }
 
     &-list {
-        display: grid;
+        display: flex;
+        flex-direction: column;
     }
 
     &-item {
@@ -67,12 +79,28 @@
         margin-left: -32px;
         margin-right: -32px;
         padding: 32px;
-        gap: 82px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: 82px;
 
         &-leftblock {
             margin-left: 40px;
-            width: 320px;
+            max-width: 400px;
+            width: 100%;
             gap: 32px;
+
+            .block__devcycle-content:first-of-type  {
+                display: none;
+            }
+        }
+
+        .adaptive {
+            grid-column: span 2;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin-left: 40px;
         }
 
         &-content,
@@ -84,12 +112,28 @@
     @media screen and (max-width: 767px) {
         margin-left: -16px;
         margin-right: -16px;
-        padding: 32px 16px;
-        flex-direction: column;
-        gap: 32px;
+        padding: 32px 16px 52px;
+        column-gap: 0;
 
         &-leftblock {
-            margin-left: initial;
+            margin-left: 0;
+            max-width: 320px;
+        }
+
+        .adaptive {
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .adaptive, &-leftblock, &-rightblock {
+            margin-left: 0;
+            max-width: 350px;
+            width: 100%;
         }
     }
 }

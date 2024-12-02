@@ -972,24 +972,35 @@ video {
   max-width: 1440px;
   width: 100vw;
   display: flex;
-  gap: 128px;
+  justify-content: space-between;
 }
 .block__devcycle-leftblock {
   width: 600px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 34px;
 }
 .block__devcycle-content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 32px;
+}
+.block__devcycle .adaptive {
+  display: none;
 }
 .block__devcycle-tech {
   width: 496px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
+.block__devcycle-rightblock {
+  max-width: 250px;
+  width: 100%;
+}
 .block__devcycle-list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 .block__devcycle-item {
   padding: 12px 0;
@@ -1026,12 +1037,26 @@ video {
     margin-left: -32px;
     margin-right: -32px;
     padding: 32px;
-    gap: 82px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 82px;
   }
   .block__devcycle-leftblock {
     margin-left: 40px;
-    width: 320px;
+    max-width: 400px;
+    width: 100%;
     gap: 32px;
+  }
+  .block__devcycle-leftblock .block__devcycle-content:first-of-type {
+    display: none;
+  }
+  .block__devcycle .adaptive {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 40px;
   }
   .block__devcycle-content, .block__devcycle-tech {
     width: 320px;
@@ -1041,12 +1066,27 @@ video {
   .block__devcycle {
     margin-left: -16px;
     margin-right: -16px;
-    padding: 32px 16px;
-    flex-direction: column;
-    gap: 32px;
+    padding: 32px 16px 52px;
+    column-gap: 0;
   }
   .block__devcycle-leftblock {
-    margin-left: initial;
+    margin-left: 0;
+    max-width: 320px;
+  }
+  .block__devcycle .adaptive {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .block__devcycle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .block__devcycle .adaptive, .block__devcycle-leftblock, .block__devcycle-rightblock {
+    margin-left: 0;
+    max-width: 350px;
+    width: 100%;
   }
 }
 
@@ -1994,7 +2034,7 @@ video {
     width: 392px;
   }
   .block__welcome-background {
-    height: 1268px;
+    height: 1275px;
   }
   .block__welcome-background-wrapper {
     transform: translate(32%, 20%);
