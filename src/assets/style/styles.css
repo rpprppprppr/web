@@ -1915,6 +1915,7 @@ video {
 @media screen and (max-width: 767px) {
   .block__team {
     padding: 28px 0 44px;
+    justify-content: center;
   }
   .block__team-leftblock {
     gap: 20px;
@@ -1945,8 +1946,8 @@ video {
     display: initial;
   }
   .block__team-image-adaptive .icon-wrapper {
-    top: 36%;
-    left: 48%;
+    top: 32%;
+    left: 46%;
   }
 }
 

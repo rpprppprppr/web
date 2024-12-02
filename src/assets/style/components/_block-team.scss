@@ -106,6 +106,7 @@
 
     @media screen and (max-width: 767px) {
         padding: 28px 0 44px;
+        justify-content: center;
 
         &-leftblock {
             gap: 20px;
@@ -144,8 +145,8 @@
                 }
 
                 .icon-wrapper {
-                    top: 36%;
-                    left: 48%;
+                    top: 32%;
+                    left: 46%;
                 }
             }
         }
