@@ -9,71 +9,296 @@
         <link rel="stylesheet" href="assets/styles/style.css">
     </head>
     <body>
-        <header class="site-header">
-            <img src="assets/img/logo.png" alt="Логотип">
-            <nav class="navigation-menu">
-                <ul class="breadcrumbs">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="block__header">
+            <img class="block__header-logo" src="" alt="">
+            <ul class="block__header-links">
+                <li class="block__header-link"><a href="#"></a></li>
+                <li class="block__header-link"><a href="#"></a></li>
+                <li class="block__header-link"><a href="#"></a></li>
+                <li class="block__header-link"><a href="#"></a></li>
+                <li class="block__header-link"><a href="#"></a></li>
+            </ul>
+        </nav>
 
-        <main class="main-content">
-            <section class="welcome-section">
-                <h1 class="header-h1">Добро пожаловать!</h1>
-                <p class="p-text">Это пример главной страницы нашего сайта, где мы рады представить вам нашу команду и услуги.</p>
-                <img src="assets/img/welcome.jpg" alt="Добро пожаловать">
-            </section>
-    
-            <hr>
-    
-            <section class="team-section">
-                <h3 class="header-h3">Наша команда</h3>
-                <h4 class="header-h4">Лучшие специалисты</h4>
-                <p class="p-text">Мы рады предложить вам наши услуги. Наша команда состоит из высококвалифицированных специалистов, готовых помочь вам в любой ситуации.</p>
-                <ul class="team-list">
-                    <li>Иванов Иван Иванович - Эксперт в области маркетинга</li>
-                    <li>Петров Петр Петрович - Ведущий разработчик</li>
-                    <li>Васильева Василиса Васильевна - Дизайнер пользовательского интерфейса</li>
-                </ul>
-                <img src="assets/img/team.jpg" alt="Наша команда">
-            </section>
-    
-            <hr>
-    
-            <section class="contact-section">
-                <h3 class="header-h3">Свяжитесь с нами</h3>
-                <p class="p-text">Мы всегда готовы помочь вам. Пожалуйста, заполните форму ниже, и мы свяжемся с вами в кратчайшие сроки.</p>
-                <form class="contact-form">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" class="input-field">
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="input-field">
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="input-field"></textarea>
-
-                    <button type="submit" class="submit-button">Submit</button>
+        <div class="block__welcome">
+            <div class="block__welcome-content">
+                <h1 class="block__welcome-title"></h1>
+                <h4 class="block__welcome-boldtext"></h4>
+            </div>
+            <div class="block__welcome-form">
+                <h2 class="block__welcome-subtitle"></h2>
+                <form class="block__welcome-form-content">
+                    <div class="form-item">
+                        <label class="form-label" for="#phone"></label>
+                        <input class="form-input" type="text" id="phone">
+                    </div>
+                    <div class="form-item">
+                        <label class="form-label" for="#name"></label>
+                        <input class="form-input" type="text" id="name">
+                    </div>
+                    <button class="form-button" type="submit"></button>
                 </form>
-                <img src="assets/img/contact.jpg" alt="Свяжитесь с нами" class="contact-image">
-            </section>
-        </main>
+            </div>
+            <img class="block__welcome-image" src="" alt="">
+        </div>
 
         <hr>
-        
-        <footer class="site-footer">
-            <h3 class="header-h3">Контакты</h3>
-            <p class="p-text">Свяжитесь с нами по указанным ниже контактам:</p>
-            <ul class="contact-list">
-                <li>Кондренко Дарья - Менеджер по работе с клиентами</li>
-                <li>Телефон: +7 (123) 456-78-90</li>
-                <li>Email: example@example.com</li>
-            </ul>
-            <p class="p-text">Все права защищены</p>
-        </footer>
 
+        <div class="block__devcycle">
+            <div class="block__devcycle-content">
+                <h1 class="block__devcycle-title"></h1>
+                <h4 class="block__devcycle-boldtext"></h4>
+                <h2 class="block__devcycle-subtitle"></h2>
+                <p class="block__devcycle-text"></p>
+                <h2 class="block__devcycle-subtitle"></h2>
+                <p class="block__devcycle-text"></p>
+            </div>
+            <div class="block__devcycle-list">
+                <div class="block__devcycle-links">
+                    <a class="block__devcycle-link" href="#"></a>
+                    <a class="block__devcycle-link" href="#"></a>
+                    <a class="block__devcycle-link" href="#"></a>
+                    <a class="block__devcycle-link" href="#"></a>
+                    <a class="block__devcycle-link" href="#"></a>
+                    <a class="block__devcycle-link" href="#"></a>
+                    <a class="block__devcycle-link" href="#"></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="block__developed">
+            <h1 class="block__developed-title"></h1>
+            <div class="block__developed-grid">
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+                <div class="block__developed-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="block__projects">
+            <h1 class="block__projects-title"></h1>
+            <h4 class="block__projects-boldtext"></h4>
+            <div class="block__projects-links">
+                <a class="block__projects-link"></a>
+                <a class="block__projects-link"></a>
+                <a class="block__projects-link"></a>
+                <a class="block__projects-link"></a>
+                <a class="block__projects-link"></a>
+                <a class="block__projects-link"></a>
+                <a class="block__projects-link"></a>
+                <button class="block__projects-button"></button>
+            </div>
+            <div class="block__projects-content">
+                <h1 class="block__projects-title"></h1>
+                <h4 class="block__projects-boldtext"></h4>
+                <p class="block__projects-text"></p>
+                <div class="block__projects-download">
+                    <img class="download-image" src="" alt="">
+                    <img class="download-image" src="" alt="">
+                </div>
+            </div>
+            <img class="block__projects-image" src="" alt="">
+        </div>
+
+        <hr>
+
+        <div class="block__discuss">
+            <div class="block__discuss-content">
+                <h1 class="block__discuss-title"></h1>
+                <h4 class="block__discuss-boldtext"></h4>
+            </div>
+            <form class="block__discuss-form">
+                <div class="form-item">
+                    <label class="form-label" for="#phone"></label>
+                    <input class="form-input" type="text" id="phone">
+                </div>
+                <div class="form-item">
+                    <label class="form-label" for="#name"></label>
+                    <input class="form-input" type="text" id="name">
+                </div>
+                <button class="form-button" type="submit"></button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="block__stages">
+            <h1 class="block__stages-title"></h1>
+            <div class="block__stages-items">
+                <div class="block__stages-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                    <p class="item-text"></p>
+                </div>
+                <div class="block__stages-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                    <p class="item-text"></p>
+                </div>
+                <div class="block__stages-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                    <p class="item-text"></p>
+                </div>
+                <div class="block__stages-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                    <p class="item-text"></p>
+                </div>
+                <div class="block__stages-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                    <p class="item-text"></p>
+                </div>
+                <div class="block__stages-item">
+                    <svg class="item-icon"></svg>
+                    <h3 class="item-title"></h3>
+                    <p class="item-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="block__team">
+            <div class="block__team-content">
+                <h1 class="block__team-title"></h1>
+                <h4 class="block__team-boldtext"></h4>
+            </div>
+            <img class="block__team-image"src="" alt="">
+        </div>
+
+        <hr>
+
+        <div class="block__ebook">
+            <h1 class="block__team-title"></h1>
+            <form class="block__ebook-form">
+                <div class="form-item">
+                    <label class="form-label" for="#phone"></label>
+                    <input class="form-input" type="text" id="phone">
+                </div>
+                <div class="form-item">
+                    <label class="form-label" for="#name"></label>
+                    <input class="form-input" type="text" id="name">
+                </div>
+                <div class="form-item">
+                    <label class="form-label" for="#email"></label>
+                    <input class="form-input" type="text" id="email">
+                </div>
+                <button class="form-button" type="submit"></button>
+            </form>
+            <img class="block__ebook-image" src="" alt="">
+        </div>
+
+        <hr>
+
+        <div class="block__faq">
+            <h1 class="block__team-title"></h1>
+            <div class="block__faq-items">
+                <div class="block__faq-item">
+                    <h3 class="item-title"></h3>
+                    <button class="item-button"></button>
+                </div>
+                <div class="block__faq-item">
+                    <h3 class="item-title"></h3>
+                    <button class="item-button"></button>
+                </div>
+                <div class="block__faq-item">
+                    <h3 class="item-title"></h3>
+                    <button class="item-button"></button>
+                    <p class="item-text"></p>
+                </div>
+                <div class="block__faq-item">
+                    <h3 class="item-title"></h3>
+                    <button class="item-button"></button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site__footer">
+            <img class="site__footer-logo" src="" alt="">
+            <div class="site__footer-links">
+                <div class="site__footer-link">
+                    <label class="link-label" for="#phone"></label>
+                    <a class="link" href="" id="phone"></a>
+                </div>
+                <div class="site__footer-link">
+                    <label class="link-label" for="#email"></label>
+                    <a class="link" href="" id="email"></a>
+                </div>
+                <div class="site__footer-link">
+                    <label class="link-label" for="#adress"></label>
+                    <a class="link" href="" id="adress"></a>
+                </div>
+                <div class="site__footer-link">
+                    <label class="link-label" for="#doc"></label>
+                    <a class="link" href="" id="doc"></a>
+                </div>
+            </div>
+            <p class="site__footer-text"></p>
+        </footer>
+        
         <script src="index.js"></script>
     </body>
 </html>
