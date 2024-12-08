@@ -1,25 +1,23 @@
 .block__devcycle {
     background-color: #ffffff;
-
-    margin-left: -108px;
-    margin-right: -108px;
     padding: 80px 108px;
-
     width: 100%;
-
     display: flex;
     gap: 128px;
+    box-sizing: border-box;
 }
 
 .block__devcycle-leftblock {
     width: 600px;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 34px;
 }
 
 .block__devcycle-content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 32px;
 }
 
@@ -44,7 +42,8 @@
 .block__devcycle-tech {
     width: 496px;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -71,7 +70,8 @@
 }
 
 .block__devcycle-list {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .block__devcycle-item {
@@ -106,18 +106,12 @@
 
 @media screen and (max-width: 1224px) {
     .block__devcycle {
-        margin-left: -80px;
-        margin-right: -80px;
-    
         padding: 80px;
     }
 }
 
 @media screen and (max-width: 1023px) {
     .block__devcycle {
-        margin-left: -32px;
-        margin-right: -32px;
-    
         padding: 32px;
     
         gap: 82px;
@@ -145,9 +139,6 @@
 
 @media screen and (max-width: 767px) {
     .block__devcycle {
-        margin-left: -16px;
-        margin-right: -16px;
-    
         padding: 32px 16px;
         
         flex-direction: column;

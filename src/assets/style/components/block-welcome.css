@@ -1,15 +1,16 @@
 .block__welcome {
     margin-top: -56px;
     height: 900px;
+    padding: 160px 108px 0;
+    box-sizing: border-box;
 }
 
 .block__welcome-content {
-    margin-top: 160px;
-
     width: 600px;
     height: 220px;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -70,7 +71,8 @@
 }
 
 .form__welcome-content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 
     flex: 1;
@@ -135,6 +137,10 @@
 }
 
 @media screen and (max-width: 1224px) {
+    .block__welcome {
+        padding: 160px 80px 0;
+    }
+
     .block__welcome-image {
         width: 100vw;
     }
@@ -144,11 +150,10 @@
     .block__welcome {
         margin-top: -90px;
         height: 762px;
+        padding: 160px 32px 0;
     }
 
     .block__welcome-content {
-        margin-top: 138px;
-    
         width: 382px;
         height: 204px;
     }
@@ -200,7 +205,9 @@
 
 @media screen and (max-width: 767px) {
     .block__welcome {
+        padding: 160px 16px 0;
         height: 1268px;
+        margin-top: -98px;
     }
 
     .block__welcome-form {
