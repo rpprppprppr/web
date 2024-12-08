@@ -1,12 +1,14 @@
 .block__welcome {
     margin-top: -56px;
     height: 900px;
+	padding: 160px 108px 0;
+    box-sizing: border-box;
 
 	&-content {
-		margin-top: 160px;
 		width: 600px;
 		height: 220px;
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		gap: 24px;
 	}
 	
@@ -82,9 +84,9 @@
 	@media screen and (max-width: 1023px) {
 		margin-top: -90px;
 		height: 762px;
+		padding: 160px 32px 0;
 	
 		&-content {
-			margin-top: 138px;
 			width: 382px;
 			height: 204px;
 		}
@@ -116,7 +118,9 @@
 	}
 	
 	@media screen and (max-width: 767px) {
+		padding: 160px 16px 0;
 		height: 1268px;
+		margin-top: -98px;
 	
 		&-form {
 			margin-top: 536px;
@@ -127,7 +131,8 @@
 			height: 1268px;
 	
 			&-wrapper {
-				transform: translate(32%, 20%);
+				transform: translate(65%, 20%);
+				justify-content: initial;
 			}
 		}
 	}	

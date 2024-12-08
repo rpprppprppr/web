@@ -7,29 +7,13 @@ html {
 body {
 	background: #f2f4f7;
 	width: 100%;
-	margin: 0;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	max-width: 1440px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 108px;
-	box-sizing: border-box;
-
-	@media screen and (max-width: 1224px) {
-		padding: 0 80px;
-	}
-
-	@media screen and (max-width: 1023px) {
-		padding: 0 32px;
-	}
-
-	@media screen and (max-width: 767px) {
-		padding: 0 16px;
+@media screen and (max-width: 1224px) {
+	body {
+		margin: 0;
 	}
 }
 

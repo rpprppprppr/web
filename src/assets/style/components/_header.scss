@@ -7,6 +7,8 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     background: var(--background-color_1);
     z-index: 1000;
+    margin-left: 108px;
+    box-sizing: border-box;
 
     &__content {
         display: flex;
@@ -208,8 +210,6 @@
         }
     }
 
-    
-
 	@media screen and (max-width: 1328px) {
 		&__content {
 			gap: 30px;
@@ -232,6 +232,10 @@
 			gap: 10px;
 		}
 	}
+
+    @media screen and (max-width: 1224px) {
+        margin-left: 80px;
+    }
 	
 	@media screen and (max-width: 1105px) {
 		padding: 16px 17px;
@@ -253,7 +257,7 @@
 		padding: 25px 32px;
 		width: 100vw;
 		top: 16px;
-		margin-left: -32px;
+		margin: 0;
 
 		&__content {
 			gap: initial;
@@ -280,7 +284,6 @@
 	@media screen and (max-width: 767px) {
 		padding: 35px 16px;
 		top: 20px;
-		margin-left: -16px;
 
 		&__menu {
 			width: 40px;
