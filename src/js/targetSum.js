@@ -1,5 +1,5 @@
 function targetSum(numbers, target) {
-    const map = new Map();
+    let map = new Map();
 
     for (let i = 0; i < numbers.length; i++) {
         const complement = target - numbers[i];
@@ -13,9 +13,7 @@ function targetSum(numbers, target) {
 }
 
 const numbers = [2, 7, 11, 15];
-const target1 = 9;
-const target2 = 11;
-const result1 = targetSum(numbers, target1);
-const result2 = targetSum(numbers, target2);
-console.log(result1); // [0, 1]
-console.log(result2); // []
+let target = 9;
+console.log(targetSum(numbers, target)); // [0, 1]
+target = 11;
+console.log(targetSum(numbers, target)); // []
