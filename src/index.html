@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Заказ пиццы</title>
+        <link href="style/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="order__form">
+            <div class="pizza__block">
+                <div class="pizza__card">
+                    <img src="img/pepperoni.jpg" alt="img-pepperoni">
+                    <p class="pizza__name">Пепперони</p>
+                </div>
+                <div class="pizza__card">
+                    <img src="img/margarita.jpg" alt="img-margarita">
+                    <p class="pizza__name">Маргарита</p>
+                </div>
+                <div class="pizza__card">
+                    <img src="img/bavarskaya.jpg" alt="img-bavarskaya">
+                    <p class="pizza__name">Баварская</p>
+                </div>
+            </div>
+            <div class="option__block">
+                <p class="option__block-title">Выберите размер</p>
+                <div class="option__block-size">
+                    <div class="pizza__size">Маленькая</div>
+                    <div class="pizza__size">Большая</div>
+                </div>
+
+                <p class="option__block-subtitle">Добавить по вкусу</p>
+                <div class="topping__block">
+                    <div class="topping__card">
+                        <img src="img/cheese-board.png" alt="img-cheese-board">
+                        <p class="topping__name">Сырный борт</p>
+                        <p class="topping__сost">50₽</p>
+                    </div>
+                    <div class="topping__card">
+                        <img src="img/mozzarella.png" alt="img-mozzarella">
+                        <p class="topping__name">Сливочная моцарелла</p>
+                        <p class="topping__сost">50₽</p>
+                    </div>
+                    <div class="topping__card">
+                        <img src="img/cheddar-parmesan.png" alt="img-cheddar-parmesan">
+                        <p class="topping__name">Чедер и пармезан</p>
+                        <p class="topping__сost">50₽</p>
+                    </div>
+                </div>
+
+                <button class="order__button">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <script src="pizza.js" type="module"></script>
+    </body>
+</html>

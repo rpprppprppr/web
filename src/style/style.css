@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Dodo;
+    src: url("../font/dodo-rounded.ttf");
+}
+
+body {
+    background-color: #e4e2e2;
+
+    font-family: Dodo, 'Comic Sans MS', sans-serif;
+    font-size: 20px;
+}
+
+.order__form {
+    background-color: white;
+    border-radius: 50px;
+
+    width: 1300px;
+    height: 700px;
+
+    margin: auto;
+    margin-top: 40px;
+
+    padding: 70px;
+
+    display: flex;
+    gap: 50px;
+}
+
+.pizza__block {
+    display: flex;
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.pizza__card, .pizza__card-active {
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.pizza__card-active {
+    box-shadow: inset 0 0 0 2px #e86100;
+    border-radius: 30px;
+}
+
+.pizza__card img, .pizza__card-active img {
+    width: 210px;
+    height: 210px;
+
+    cursor: pointer;
+}
+
+.pizza__name {
+    font-weight: bold;
+}
+
+.option__block {
+    margin-top: -50px;
+}
+
+.option__block-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.option__block-size {
+    background-color: #f3f3f7;
+
+    border-radius: 50px;
+    display: flex;
+    padding: 5px;
+}
+
+.pizza__size, .pizza__size-active {
+    width: 225px;
+    padding: 10px;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.pizza__size-active {
+    border-radius: 50px;
+
+    background-color: white;
+    box-shadow: 10px 7px 20px 0px rgb(94 94 94 / 28%);
+}
+
+.option__block-subtitle {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.topping__block {
+    display: flex;
+    gap: 25px;
+}
+
+.topping__card, .topping__card-active {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 115px;
+    gap: 15px;
+
+    text-align: center;
+
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -7px 7px 20px 0px rgb(94 94 94 / 28%);
+}
+
+.topping__card img, .topping__card-active img {
+    width: 110px;
+    height: 110px;
+
+    cursor: pointer;
+}
+
+.topping__card-active {
+    box-shadow: inset 0 0 0 2px #e86100;
+    border-radius: 20px;
+}
+
+.topping__name {
+    margin: 0;
+    min-height: 48px;
+
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.topping__сost {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.order__button {
+    background-color: #e86100;
+    border-radius: 50px;
+    border: none;
+
+    padding: 20px;
+    margin-top: 230px;
+    width: 100%;
+
+    font-family: Dodo, 'Comic Sans MS', sans-serif;
+    font-size: 18px;
+    color: white;
+
+    cursor: pointer;
+}
+
+.order__button:hover {
+    background-color: #c75402;
+}
