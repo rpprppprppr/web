@@ -19,7 +19,6 @@ const init = async () => {
 }
 
 function renderTodos(todos) {
-    const container = document.getElementById('todos-container')
     const todoList = document.getElementById('todo-list')
     todoList.innerHTML = ''
 
@@ -42,11 +41,21 @@ function createTodoCard(todo) {
     title.classList.add('todo-title')
     title.innerText = `ID: ${todo.id} - ${todo.description}`
 
-    const statusIcon = document.createElement('span')
-    statusIcon.classList.add('status-icon')
-    if (todo.completed) {
-        statusIcon.innerText = '✔️'
-        statusIcon.classList.add('completed')
+    const checkbox = document.createElement('input')
+    checkbox.type = 'checkbox'
+    checkbox.classList.add('todo-checkbox')
+    checkbox.checked = todo.completed
+
+    checkbox.onclick = async () => {
+        const newCompletedStatus = !todo.completed
+        const response = await updateTodo(todo.id, newCompletedStatus)
+        
+        if (response.ok) {
+            todo.completed = newCompletedStatus
+            init()
+        } else {
+            checkbox.checked = todo.completed
+        }
     }
 
     const deleteButton = document.createElement('button')
@@ -55,17 +64,8 @@ function createTodoCard(todo) {
     deleteButton.onclick = () => deleteTodo(todo.id)
 
     card.appendChild(title)
-    card.appendChild(statusIcon)
+    card.appendChild(checkbox)
     card.appendChild(deleteButton)
-
-    if (!todo.completed) {
-        const updateButton = document.createElement('button')
-        updateButton.classList.add('update-btn')
-        updateButton.innerText = 'Отметить выполненным'
-        updateButton.onclick = () => updateTodo(todo.id)
-
-        card.appendChild(updateButton)
-    }
 
     return card
 }
@@ -75,9 +75,8 @@ async function deleteTodo(id) {
     init()
 }
 
-async function updateTodo(id) {
-    await Todo.update(id)
-    init()
+async function updateTodo(id, completed) {
+    return await Todo.update(id, completed)
 }
 
 async function addTodo(event) {

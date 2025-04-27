@@ -12,10 +12,10 @@ const Todo = {
         })
     },
 
-    async update(id) {
+    async update(id, completed) {
         return await API(`/todo/${id}`, {
             method: 'PUT',
-            body: JSON.stringify({ completed: true })
+            body: JSON.stringify({ completed: completed })
         })
     },
 
