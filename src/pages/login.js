@@ -4,6 +4,8 @@ import location from "../services/location.js";
 import loading from "../services/loading.js";
 
 const init = async () => {
+    loading.start()
+    
     const { ok: isLogged } = await Auth.me()
 
     if (isLogged) {
