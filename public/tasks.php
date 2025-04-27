@@ -50,6 +50,10 @@
     echo transliterate("Привет, мир!");
 
 
+    echo "<h2>Задание 4-5</h2>";
+    echo "<a href=\"engine1/index.php\">Посмотреть динамическое меню на engine1</a>";
+
+
     echo "<h2>Задание 6</h2>";
     foreach ($regions as $region => $cities) {
         $filteredCities = array_filter($cities, function($city) {
