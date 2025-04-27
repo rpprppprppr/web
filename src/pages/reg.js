@@ -8,9 +8,9 @@ const init = async () => {
 
     if (isLogged) {
         return location.user()
-    } else {
-        loading.stop()
     }
+
+    loading.stop()
 
     const formEl = document.getElementById('login-form')
 
