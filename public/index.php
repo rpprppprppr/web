@@ -1,6 +1,9 @@
 <?php
     session_start();
 
+    include_once 'logger.php';
+    logRequest();
+
     include_once 'ImageResize.php';
     use Gumlet\ImageResize;
 
@@ -8,7 +11,6 @@
     $smallDir = __DIR__ . '/uploads/small/';
     $message = '';
 
-    // Создание папок, если их нет
     if (!file_exists($bigDir)) mkdir($bigDir, 0777, true);
     if (!file_exists($smallDir)) mkdir($smallDir, 0777, true);
 
